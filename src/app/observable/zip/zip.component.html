@@ -1,0 +1,37 @@
+<div class="p-5">
+  <h3>Zip & ForkJoin</h3>
+  <br />
+  <div class="row">
+    <div class="col-md-3 pr-4">
+      <strong>Names</strong>
+      <hr />
+      <select class="form-control" #name>
+        <option *ngFor="let item of namesource" value="{{ item }}">
+          {{ item }}
+        </option>
+      </select>
+      <br />
+      <br />
+
+      <strong>Colors</strong>
+      <hr />
+      <select class="form-control" #color>
+        <option *ngFor="let item of colorsource" value="{{ item }}">
+          {{ item }}
+        </option>
+      </select>
+      <br />
+      <br />
+    </div>
+
+    <div class="col-md-9 ml-auto">
+      <strong>Zip</strong>
+      <hr />
+      <div class="wrapper" id="elContainer1"></div>
+
+      <strong>ForkJoin</strong>
+      <hr />
+      <div class="wrapper" id="elContainer2"></div>
+    </div>
+  </div>
+</div>

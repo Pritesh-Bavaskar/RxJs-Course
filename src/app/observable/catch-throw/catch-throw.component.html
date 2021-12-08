@@ -1,0 +1,37 @@
+<div class="p-5">
+  <h3>Catch Error & Throw Error</h3>
+  <br />
+  <div
+    *ngIf="error"
+    class="alert alert-danger alert-dismissible fade show"
+    role="alert"
+  >
+    <strong>Error : </strong>Network Error Occured
+    <!-- <button type="button" class="close" data-dismiss="alert" alert-label="">
+      <span arial-hidden="true">&times;</span>
+    </button> -->
+  </div>
+  <button class="btn btn-primary" #clickbtn>Get List</button>
+  <!-- <div class="row">
+    <div class="col-md-12">
+      <strong>Products : <span class="text-primary">Laptop</span></strong>
+    </div>
+  </div> -->
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Sr No.</th>
+
+        <th scope="col">Title</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of searchResults; index as i">
+        <th scope="row">{{ i + 1 }}</th>
+        <td>
+          <p>{{ item.title }}</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

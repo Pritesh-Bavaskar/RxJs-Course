@@ -1,0 +1,28 @@
+<div class="p-5">
+  <h2 class="my-3">Promise</h2>
+  <p>Value Coming from Promise</p>
+  <h6>{{ promiseval }}</h6>
+
+  <h2 class="my-3">Promise: Async / Await</h2>
+
+  <div class="row">
+    <div class="col-md-4">
+      <strong>Eg 01 : With Promise</strong>
+      <hr />
+      <Button class="btn btn-primary" (click)="fetch1()">Get Data</Button>
+      <div class="my-3">{{ fetch1val }}</div>
+    </div>
+    <div class="col-md-4">
+      <strong>Eg 02 : With Async / Await</strong>
+      <hr />
+      <Button class="btn btn-primary" (click)="fetch2()">Get Data</Button>
+      <div class="my-3">{{ fetch2val }}</div>
+    </div>
+    <div class="col-md-4">
+      <strong>Eg 03 : With Fetch api</strong>
+      <hr />
+      <Button class="btn btn-primary" (click)="fetch3()">Get Data</Button>
+      <div class="my-3">{{ fetch3val }}</div>
+    </div>
+  </div>
+</div>

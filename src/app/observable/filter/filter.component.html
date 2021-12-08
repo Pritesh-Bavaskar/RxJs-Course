@@ -1,0 +1,73 @@
+<div class="p-5">
+  <h3>Filter</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <hr />
+      <strong>Ex - 01</strong>
+      <hr />
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Filter: </strong>by length
+      </p>
+      <hr />
+      <table>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <br />
+          <hr />
+        </tr>
+        <tr *ngFor="let item of data1">
+          <td>{{ item.id }}</td>
+          <td>{{ item.name }}</td>
+
+          <br />
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-4">
+      <hr />
+      <strong>Ex - 02</strong>
+      <hr />
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Filter: </strong>by gender
+      </p>
+      <hr />
+      <table>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Gender</th>
+        </tr>
+        <tr *ngFor="let item of data2">
+          <td>{{ item.id }}</td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.gender }}</td>
+          <br />
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-4">
+      <hr />
+      <strong>Ex - 03</strong>
+      <hr />
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Filter: </strong>by nth item
+      </p>
+
+      <hr />
+      <table>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Gender</th>
+        </tr>
+        <tr *ngFor="let item of data3">
+          <td>{{ item.id }}</td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.gender }}</td>
+          <br />
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

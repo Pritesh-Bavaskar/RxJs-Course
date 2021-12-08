@@ -1,0 +1,67 @@
+<div class="p-5">
+  <div class="my-3">
+    <h2>Custom</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <strong>Eg-01 (Manual)</strong>
+        <hr />
+        <ul
+          [ngClass]="
+            itemstatus == 'completed'
+              ? 'completed'
+              : itemstatus == 'error'
+              ? 'error'
+              : ''
+          "
+          class="itemList"
+          id="elcontainer"
+        ></ul>
+      </div>
+      <div class="col-md-6">
+        <strong>Eg-02 (Custom Interval Observable)</strong>
+        <hr />
+        <ul
+          [ngClass]="
+            itemstatus2 == 'completed'
+              ? 'completed'
+              : itemstatus2 == 'error'
+              ? 'error'
+              : ''
+          "
+          class="itemList"
+          id="elcontainer2"
+        ></ul>
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="col-md-12">
+        <strong>Eg-03 (Random Items)</strong>
+        <p class="bg-light py-2 px-3 border rounded">
+          <strong>Random Item :</strong> 'Item1','Item2','Item3'
+        </p>
+        <hr />
+        <p>
+          Current Name:<strong>{{ items }}</strong>
+        </p>
+        <span
+          [ngClass]="
+            itemsstatus3 == 'completed'
+              ? 'badge bg-success'
+              : itemsstatus3 == 'error'
+              ? 'badge bg-danger'
+              : 'badge bg-primary'
+          "
+        >
+          {{
+            itemsstatus3 == "completed"
+              ? "success"
+              : itemsstatus3 == "error"
+              ? "Error"
+              : "Fetching"
+          }}</span
+        >
+      </div>
+    </div>
+  </div>
+</div>
