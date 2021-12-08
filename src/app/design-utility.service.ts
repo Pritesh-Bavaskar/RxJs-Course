@@ -26,7 +26,7 @@ export class DesignUtilityService {
     let el = document.createElement('li');
     el.innerText = val;
 
-    document.getElementById(containerId)?.appendChild(val);
+    document.getElementById(containerId)?.appendChild(el);
   }
 
   getSearches(searchTerm: any): Observable<Search> {
