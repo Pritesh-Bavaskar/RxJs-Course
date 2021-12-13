@@ -39,6 +39,8 @@ import { CatchThrowComponent } from './observable/catch-throw/catch-throw.compon
 import { SwitchMapSearchComponent } from './observable/switch-map-search/switch-map-search.component';
 import { FormsModule } from '@angular/forms';
 import { ConcatMapMobileComponent } from './observable/concat-map-mobile/concat-map-mobile.component';
+import { D3jsComponent } from './observable/d3js/d3js.component';
+import { ExternalLibComponent } from './observable/external-lib/external-lib.component';
 
 
 @NgModule({
@@ -78,6 +80,8 @@ import { ConcatMapMobileComponent } from './observable/concat-map-mobile/concat-
     CatchThrowComponent,
     SwitchMapSearchComponent,
     ConcatMapMobileComponent,
+    D3jsComponent,
+    ExternalLibComponent,
 
   ],
   imports: [

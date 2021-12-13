@@ -30,11 +30,15 @@ import { ConcatComponent } from './observable/concat/concat.component';
 import { ConcatMapComponent } from './observable/concat-map/concat-map.component';
 import { SwitchMapComponent } from './observable/switch-map/switch-map.component';
 import { ExhaustMapComponent } from './observable/exhaust-map/exhaust-map.component';
+import { D3jsComponent } from './observable/d3js/d3js.component';
+import { ExternalLibComponent } from './observable/external-lib/external-lib.component';
 
 const routes: Routes = [
   { path: '', component: PromiseComponent },
   {
-    path: 'observable', component: ObservableComponent, children: [
+    path: 'observable',
+    component: ObservableComponent,
+    children: [
       { path: '', component: AllComponent },
       { path: 'from-event', component: FromEventComponent },
       { path: 'interval', component: IntervalComponent },
@@ -63,12 +67,14 @@ const routes: Routes = [
       { path: 'catch-throw', component: CatchThrowComponent },
       { path: 'switch-map-search', component: SwitchMapSearchComponent },
       { path: 'concat-map-mobile', component: ConcatMapMobileComponent },
-    ]
+      { path: 'd3js', component: D3jsComponent },
+      { path: 'ExternalLib', component: ExternalLibComponent },
+    ],
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
